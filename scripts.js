@@ -1,5 +1,6 @@
 const newDiv = document.createElement('div'); //create div
 newDiv.className = 'header-container';  // names div
+
 console.log(newDiv); //console log div name
 
 
@@ -28,11 +29,14 @@ let divCounter = 1;
 myBtn.addEventListener('click', function(){  // launch function via click event on button ID
     
     const div = document.createElement('div');
-    const box = document.createElement('box');
-    //div.textContent = 'I am a new div added to the page, welcome div #' +divCounter;
-    div.textContent = box;
+    div.className = 'square';
+    div.id= divCounter; ///assigning ID via counter
+    
+   
+    div.textContent = 'div #' +divCounter;
+    //div.textContent = box;
     document.body.appendChild(div);
-    div.appendChild(box);
+    
 
     divCounter += 1;
 
@@ -41,30 +45,31 @@ myBtn.addEventListener('click', function(){  // launch function via click event 
      });
 
 
-    /// The div should be a black square
+    /// The div should be a black square  XXXXXXXXX  -- DONE -- XXXXXXXXX
 
 
-    // The squares should flow horizontally across the page
+    // The squares should flow horizontally across the page  XXXXXXXXX  -- DONE -- XXXXXXXXX
 
-        // When there is no more room, they should wrap to the next line
-
-
-//  All of these div elements added to the page should share a single class name of your choosing
+        // When there is no more room, they should wrap to the next line  XXXXXXXXX  -- DONE -- XXXXXXXXX
 
 
-// Each div should have an id with a numerical value equivalent to the total number of squares that have been added so far since page load when the Add Square button is clicked
+//  All of these div elements added to the page should share a single class name of your choosing XXXXXXXXX  -- DONE -- XXXXXXXXX
 
 
-    // Ex: 7 squares have been added to the page since page load. When the button is clicked, another square should be added to the page, and it should have id="8".
+// Each div should have an id with a numerical value equivalent to the total number of squares that have been added so far since page load when the Add Square button is clicked XXXXXXXXX  -- DONE -- XXXXXXXXX
 
 
-    // You should not run into a case where two elements have the same id ever (even if squares are removed)
+    // Ex: 7 squares have been added to the page since page load. When the button is clicked, another square should be added to the page, and it should have id="8". XXXXXXXXX  -- DONE -- XXXXXXXXX
+
+
+    // You should not run into a case where two elements have the same id ever (even if squares are removed) XXXXXXXXX  -- DONE -- XXXXXXXXX
 
 // When hovering over a square, the value of the square's id should display centered in the square, and disappear when the cursor is no longer over the square
 
 
+/// >>>>>>>>>>>>>  RESUME HERE 6/23
 
-// When a square is clicked, it should change to a random background color (You can randomly choose from a set of colors you predefine if you wish)
+// When a square is clicked, it should change to a random background color (You can randomly choose from a set of colors you predefine if you wish)  
 
 
 // When a square is double clicked, the following should occur:
