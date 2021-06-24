@@ -1,14 +1,20 @@
-.square {
+.div {
 
     display: inline-flex;
+    text-align: justify;
     width: 100px;
     height: 100px;
-    padding: 4px;
-    margin: 10px;
+    padding: 0px;
+    margin: 5px;
     background-color: black;
-    color: blanchedalmond;
+    color: white;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
 }
 
+.header-container{
+
+    margin: 0;
+    display: inline-block;
+}
